@@ -10,6 +10,7 @@
 % an alternative to Layaureo can be ** \usepackage{fullpage} **
 \usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
+\usepackage{todonotes}
 
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
@@ -68,7 +69,7 @@ ItalicFont = Fontin-Italic.otf
 
 %--------------------TITLE-------------
 \par{\centering
-		{\Huge Alessandro \textsc{Plasmati}
+		{\Huge Huy \textsc{Le} | Curriculum Vitae
 	}\bigskip\par}
 
 %--------------------SECTIONS-----------------------------------
@@ -76,194 +77,108 @@ ItalicFont = Fontin-Italic.otf
 \section{Personal Data}
 
 \begin{tabular}{rl}
-    \textsc{Place and Date of Birth:} & Someplace, Italy  | dd Month 1912 \\
-    \textsc{Address:}   & CV Inn 19, 20301, Milano, Italy \\
-    \textsc{Phone:}     & +39 123 456789\\
-    \textsc{email:}     & \href{mailto:alessandro.plasmati@gmail.com}{alessandro.plasmati@gmail.com}
+    \textsc{Place and Date of Birth:} & Long An | Mar 1989 \\
+    \textsc{Address:}   & Ehome 3, Ho Hoc Lam, Binh Tan Dist., Ho Chi Minh City\\
+    \textsc{Phone:}     & +84 983 543 444\\
+    \textsc{email:}     & \href{mailto:huy.lenq@gmail.com}{huy.lenq@gmail.com}
 \end{tabular}
 
 %Section: Work Experience at the top
 \section{Work Experience}
+
 \begin{tabular}{r|p{11cm}}
- \emph{Current} & Trader at \textsc{Enoi} s.p.a., Milan \\\textsc{Jan 2009}&\emph{Physical Natural Gas Trading}\\&\footnotesize{Provided analysis of spreads, in particular time and location spreads, with emphasis on trading opportunities on the curve, also taking into account the availability of storage facilities. Became familiar with logistic implications of physical gas trading and developed knowledge of continental virtual hubs for gas exchange.}\\\multicolumn{2}{c}{} \\
- \textsc{Jul-Oct 2008} & 1\textsuperscript{st} year Analyst at \textsc{Lehman Brothers}, London \\&\emph{Commodities Structured Trading}\\&\footnotesize{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (\textit{ags, oils, precious} and \textit{base metals}), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.}\\\multicolumn{2}{c}{} \\
-\textsc{Summer 2007} & Summer Intern at \textsc{Lehman Brothers}, \emph{Capital Markets}\\&\footnotesize{Received pre-placed offer from the Exotics Trading Desk as a result of very positive review. Rated ``\emph{truly distinctive}'' for Analytical Skills and Teamwork.}
+
+    \emph{Current} & Java Back-End Team Leader at \textsc{Simple Solutions Taipan Vietnam} \\\textsc{Jan 2014}&\emph{Background Processing}\\&\footnotesize{Developed a distributed, clustering processing system to be utilized on SeaGame 2015. Responsible for broadcasting messages via selected channels (emails, SMS\ldots) and as a daemon continuously keeping data integrity and up-to-date in an efficient manner.}\\\multicolumn{2}{c}{} \\
+
+    \textsc{April - Dec 2013 } & Mobile Developer at \textsc{Itsy Bits} \\&\emph{Mobile Application \& Mobile Game}\\&\footnotesize{Picked up BancIt series - \href{https://itunes.apple.com/au/app/bancit-collections/id618952101?mt=8}{BancIt} \href{https://play.google.com/store/apps/details?id=com.bankerslab.collections}{Collections}, \href{https://itunes.apple.com/us/app/bancit-fico-world/id631150220?mt=8}{BancIt} \href{https://play.google.com/store/apps/details?id=com.bankerslab.bancitfico&hl=en}{FICO World}.
+    Developed GUI from the ground up (features cover flow, accoridion\ldots) with Lua in the game \href{https://itunes.apple.com/us/app/fico-missao-positivo/id688665142?mt=8}{FICO Missão:} \href{https://play.google.com/store/apps/details?id=com.bankerslab.missaopositivo}{Positivo}.
+    Mobile lead engineer of \href{http://www.toilacogaidove.com.vn/phuc-hoi-hu-ton-moi/dove-yeu-toc}{Dove} \href{https://itunes.apple.com/vn/app/dove-yeu-toc/id733163838?mt=8}{Yeu} \href{https://play.google.com/store/apps/details?id=net.itsybits.dovediamante&hl=en}{Toc}.
+}\\\multicolumn{2}{c}{} \\
+
+\textsc{November 2012 - Mar 2013} & Part-time Developer at \textsc{Itsy Bits} \\&\emph{Mobile Application}\\&\footnotesize{
+}\\\multicolumn{2}{c}{} \\
+
 \end{tabular}
+
+\section{Projects}
+
+\subsection*{MobifoneCEO}
+
+End user mobile app for Mobifone's organization client. Key highlight is a in house chart drawing using both SVG and Canvas2D, specific back-end rendering is selected at runtime depens on the running platform (iOS/Android).
+Wrote \textit{MobifoneCEO}, an hybrid mobile application using \textit{CoffeeScript}, \textit{jQuery Mobile}, \textit{Jade}, \textit{LESS}. Initiating \href{http://bankerslab.com/banc-it/}{BancIt series} with \href{https://itunes.apple.com/us/app/bancit-scoring/id599922020?mt=8}{BancIt} \href{https://play.google.com/store/apps/details?id=com.bankerslab.scoring&hl=en}{Scoring} using Sench Touch as the application framework.
+
+\begin{tabular}{rl}
+    \textsc{Scale:} & 3 persons in 1 month\\
+    \textsc{Techs:} & CoffeeScript, LESS, PhoneGap, jQuery Mobile, Jade, Paper.js\\
+\end{tabular}
+
+\subsection*{BancIt \hfill \hyperlink{bancit-links}{ | \footnotesize Links}}
+
+An series of mobile application, implemented as a single page web app, with internal achievements mechanism
+
+\begin{tabular}{rl}
+    \textsc{Scale:} & 4 persons in 2 months\\
+    \textsc{Techs:} & CoffeeScript, Sench Touch, SASS, OAuth\\
+    \\
+    
+\end{tabular}
+
+\subsection*{FICO Missão: Positivo \hfill \hyperlink{missao-links} { | \footnotesize Links}}
+
+A mobile game, written in Lua using CoronaSDK. I wrote it's GUI from the ground up which feature cover flow, accorion,\ldots
+
+\begin{tabular}{rl}
+    \textsc{Scale:} & 5 persons in 2 months\\
+    \textsc{Techs:} & <todo>\\
+\end{tabular}
+
+\subsection*{Dove Yeu Toc \hfill \hyperlink{dove-links} { | \footnotesize Links}}
+
+A sort of complex mobile app with social network feature <TODO: simplify> following, comments, like, find friends by contacts, take photos\\
+sliding menu UI...
+
+\begin{tabular}{rl}
+    \textsc{Scale:} & 7 persons in 2 months\\
+    \textsc{Techs:} & CoffeeScript, Sencha Touch\\
+\end{tabular}
+
+\subsection*{Commstree 4 - SeaGames 2015 Broadcasting \& Management System}
+\begin{tabular}{rl}
+    Scale: & ~20 persons * 2 years\\
+    Techs: & Vert.X, Spring (MVC/Data), , Hibernate
+\end{tabular}
+
 
 %Section: Education
 \section{Education}
 \begin{tabular}{rl}	
- \textsc{July} 2008 & Master of Science in \textsc{Finance}, \textbf{Bocconi University}, Milan\\
-& 110/110 \small\emph{summa cum laude} | Major: Quantitative Finance\\
-& Thesis: ``Sublinear and Locally Sublinear Prices'' | \small Advisor: Prof. Erio \textsc{Castagnoli}\\
-&\normalsize \textsc{Gpa}: 28.61/30\hyperlink{grds}{\hfill | \footnotesize Detailed List of Exams}\\&\\
-\textsc{July} 2006& Undergraduate Degree in \textsc{Law} and \textsc{Business Administration} \\&110/110 \small\emph{summa cum laude}, \normalsize\textbf{Bocconi University}, Milan\\
-& Thesis: ``Portfolio Strategies with Target Prices'' | \small Advisor: Stefano \textsc{Bonini}\\
-&\normalsize \textsc{Gpa}: 29.85/30\hyperlink{grds_cleli}{\hfill| \footnotesize Detailed List of Exams}\\&\\
-\textsc{Fall} 2005& Exchange Semester at \textbf{University of Southern California}, Los Angeles\\
-&\textsc{Gpa}: 3.875/4 \hyperlink{grds_usc}{\hfill| \footnotesize Detailed List of Exams}\\&\\
-\textsc{July} 2003& \textbf{Liceo Classico ``E. Duni''}, Matera | Final Grade: 100/100
-\end{tabular}
-
-%Section: Scholarships and additional info
-\section{Scholarships and Certificates}
-\begin{tabular}{rl}
- \textsc{Sept.} 2006 & Scholarship for graduate students with an outstanding curriculum \footnotesize(\EURcr 30,000)\normalsize\\
-\textsc{June} 2006 & {\textsc{Gmat}\textregistered}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}: 730 (\textsc{q:50;v:39}) 96\textsuperscript{th} percentile; \textsc{awa}: 6.0/6.0 (89\textsuperscript{th} percentile)
+    \textsc{July} 2008 & Participated in \textsc{Computer Science} at \textit{HCM International University} (National Univerisy)
 \end{tabular}
 
 %Section: Languages
 \section{Languages}
 \begin{tabular}{rl}
- \textsc{Italian:}&Mothertongue\\
+ \textsc{Vietnamese:}&Mothertongue\\
 \textsc{English:}&Fluent\\
-\textsc{French:}&Basic Knowledge\\
 \end{tabular}
 
-\section{Computer Skills}
+\section{Skill Set}
 \begin{tabular}{rl}
- Basic Knowledge:& \textsc{php}, my\textsc{sql}, \textsc{html}, Access, \textsc{Linux}, ubuntu, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}\\
-Intermediate Knowledge:& \textsc{vba}, Excel, Word, PowerPoint\\
+    \textsc{Programming Languages} & Java, JavaScript/CoffeeScript, Lua, VimScript, Shell (fish, bash)\\
+                                   & Clojure, Python, Haskell\\
+    \textsc{Frameworks/Libraries} & Vert.X, VSpec, Seesaw, Underscore, Sencha,\\
+                                  & grasp of Spring, Hibernate,\ldots\\
+    \textsc{Tools} & IDEA, Vim, Tmux, Markdown, \LaTeX, Git\ldots\\
 \end{tabular}
 
 \section{Interests and Activities}
-Technology, Open-Source, Programming\\
-Paradoxes in Decision Making, Psychoanalysis, Behavioural Finance\\
-Football, Travelling
+Hacking, bizarre programming, critical thinking\ldots\\
+Speaker at \href{http://www.barcampsaigon.org/2012/09/thank-you-barcampers-sponsors-volunteers/}{Barcamp 2012} ``30 Minutes Game Development with Unity'' and Techcamp 2014 \href{http://www.slideshare.net/huylenq/interactive-development-with-vim-techcamp}{``Interactive Development with Vim''}.\\
+A (tiny) Clojure user group organizer.\\
 
 \newpage
-\par{\centering\Large \hypertarget{grds}{Master of Science in \textsc{Finance}}\par}\large{\centering Grades\par}\normalsize
-\begin{center}
-\begin{tabular}{lcc}
-\multicolumn{1}{c}{\textsc{Exam}}&\textsc{Grade}&\textsc{Credit Hrs}\\ \hline
-Corporate Finance (Valuation)	&25&	6\\
-Financial Statement Analysis	&28&	6\\
-Statistics	&27&	6\\
-Theory of Finance	&26&	6\\
-Quantitative Methods for Finance	&30&	6\\
-Econometrics	&24	&6\\
-Derivatives	&31&	6\\
-Management of Financial and Insurance Companies	&30&	6\\
-Business Law	&31&	6\\
-Investment Banking	&28&	6\\ \\
-		
-Behavioral Models for Economics and Finance	&29&	6\\
-Numerical Methods for Finance	&29&	6\\
-Advanced Derivatives	&30&	6\\
-Fixed Income (Advanced Methods)	&30&	6\\ \\
-		
-English Language	&30&	4\\
-French Language	&31&	4\\
-		
-Internship	&	&8\\
-		
-Final Thesis	&	&20\\
-		
-		& Total&120\\\cline{2-3}
-&\textsc{Gpa}&\textbf{28.61}
-\end{tabular}
-\end{center}
-\bigskip
-\hrule
-\bigskip
-\par{\centering\Large \hypertarget{grds_cleli}{Undergraduate Degree in \textsc{Law and Business Administration}}\par}\large{\centering Grades\par}\normalsize
+\hypertarget{test}{yeah}
 
-\begin{center}
-
-\tablefirsthead{%
-  \multicolumn{1}{c}{\textsc{Esame (\textsc{ita})}}&\multicolumn{1}{c}{\textsc{Exam (\textsc{eng})}}&\textsc{Grade}&\textsc{Credit Hrs}\\ \hline}
-\tablehead{%
-\multicolumn{1}{c}{\textsc{Esame (\textsc{ita})}}&\multicolumn{1}{c}{\textsc{Exam (\textsc{eng})}}&\textsc{Grade}&\textsc{Credit Hrs}\\ \hline
-}
-\tabletail{%
-}
-\tablelasttail{}	
-
- \begin{supertabular}{p{4.9cm} p{4.9cm} c c}
-Economia aziendale&Theory and principles of management& 28 & 8\\
-Istituzioni di diritto privato&Principles of private law&30&8\\
- Istituzioni di diritto pubblico 
-&
- Principles of public law 
-& 30&
- 6 
-\\
-Matematica generale 
-& Mathematics 
-&31&8\\
- Contabilit\`a e Bilancio 
-& Accounting and Financial statements 
-& 31 & 8\\
- Diritto del lavoro 
-&
- Labour law 
-& 30&
-4 
-\\
- Informatica & Computer skills &29& 4 
-\\
- Economia e gestione delle imprese & Corporate management &31&6 
-\\
- Microeconomia & Microeconomics &30&8 
-\\
- Contabilit\`a e bilancio 2 & Accounting and financial statements 2 
-&29&8 \\
- Diritto commerciale & Company and business law &30&8 
-\\
- Macroeconomia & Macroeconomics &29&8 
-\\
- Statistica & Statistics &30&6\\
- Diritto delle procedure concorsuali & Insolvency law &31&4 
-\\
- Finanza aziendale 
-& Corporate finance 
-&31 &8 \\
- Matematica finanziaria & Financial mathematics &31&4 
-\\
- Programmazione e controllo 
-& Management accounting &31&8 
-\\
-Lingua Inglese \textsc{c1}& English Language \textsc{c1}& 25&6\\ 
-Diritto tributario & Tax law &30&6 
-\\
-Organizzazione e sistemi informativi aziendali &Management information systems &28&6 
-\\
- Strategia e politica aziendale* 
-& Business strategy* & 29& 6 
-\\
-Derivati*&Derivatives*&30&6\\
-Opzionale all'estero* & Corporate Financial Strategy* &30&6\\
-Lingua Francese \textsc{b1} & French Language \textsc{b1}&31&6\\
-Economia dei mercati e degli intermediari finanziari* 
-&Financial markets and institutions* &30&6 
-\\
-Revisione aziendale 
-&Financial auditing &31&6 
-\\
-Scienza delle finanze &Public economics &30&6 
-\\
- Lavoro finale& Final report&&6\\
-& & Total&180\\\cline{3-4}
-& &\textsc{Gpa}&\textbf{29.85}\\ \\ \multicolumn{4}{l}{\footnotesize A star (*) indicates that the course was taken at the \textbf{University of Southern California}, Los Angeles, \textsc{usa}}
- \end{supertabular}
-\end{center}
-\bigskip
-\hrule
-\bigskip
-\par{\centering\Large \hypertarget{grds_usc}{Exchange Program at \textsc{usc}, Los Angeles}\par}\large{\centering Grades\par}\normalsize
-
-\begin{center}
-\begin{tabular}{lcc}
-\multicolumn{1}{c}{\textsc{Exam}}&\textsc{Grade}&\textsc{Grade Points}\\ \hline
-Corporate Financial Strategy	&A&	4\\
-Derivatives	&A&	4\\
-Money, Credit, and Banking	&A&	4\\
-Business Strategy & A-& 3.5\\
-& &\\\cline{2-3}
- &\textsc{Gpa}&\textbf{3.875}
-\end{tabular}
-\end{center}
-%\newpage
 %\hypertarget{gmat}{\textsc{Gmat}\setmainfont{LMRoman10 Regular}\textregistered\setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}}
 
 %\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
