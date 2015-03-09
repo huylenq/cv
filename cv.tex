@@ -15,6 +15,7 @@
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\definecolor{black}{rgb}{0,0,0}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
 %FONTS
@@ -88,70 +89,77 @@ ItalicFont = Fontin-Italic.otf
 
 \begin{tabular}{r|p{11cm}}
 
-    \emph{Current} & Java Back-End Team Leader at \textsc{Simple Solutions Taipan Vietnam} \\\textsc{Jan 2014}&\emph{Background Processing}\\&\footnotesize{Starting as Front-End developer, end up take responsibility for distributed/clustered system. Usually work on refactoring crucial portion, performance bottle necks of other modules/system. Learn valuable lessons on maintaining unmaintainable codes. Give technical session to colleges}\\\multicolumn{2}{c}{} \\
+    \emph{Current} & Java Back-End Team Leader at \textsc{Simple Solutions Taipan Vietnam} \\\textsc{Jan 2014}&\emph{Background Processing}\\&\footnotesize{Starting at a front-end position, end up working on a distributed sytems. Occasionally in charge of refactoring crucial portions, performance bottlenecks of other modules/systems. Learn valuable lessons of maintaining unmaintainable codes. Gave technical talk sessions to colleges}\\\multicolumn{2}{c}{} \\
 
-    \textsc{April - Dec 2013 } & Mobile Developer at \textsc{Itsy Bits} \\&\emph{Mobile Application \& Mobile Game}\\&\footnotesize{Worked on developing GUI from the ground up in both web and graphics context: sliding menu, cover flow, accordion. Mobile lead engineer of the final project.}\\\multicolumn{2}{c}{} \\
+    \textsc{April - Dec 2013 } & Mobile Developer at \textsc{Itsy Bits} \\&\emph{Mobile Application \& Mobile Game}\\&\footnotesize{Worked on developing GUI from the ground up in both web and graphics context: sliding menu, cover flow, accordion, calendars... Evaluate and make decisions on technologies to be used.}\\\multicolumn{2}{c}{} \\
 
-    \textsc{November 2012 - Mar 2013} & Part-time Developer at \textsc{Itsy Bits} \\&\emph{Mobile Application}\\&\footnotesize{
-    Starting first step to the web world. Using many web technology as I can: CoffeeScript, LESS, Jade, Sencha Touch, underscore, jasmine, chai,\ldots. Initiated web hybrid app technology in the company.}\\\multicolumn{2}{c}{} \\
+    \textsc{November 2012 - Mar 2013} & Part-time Developer at \textsc{Itsy Bits} \\&\emph{Mobile Application}\\&\footnotesize{Experienced with a fair amount of web front-end technologies: CoffeeScript, LESS, Jade, Sencha Touch, underscore, jasmine, chai,\ldots. Initiated a sequence of mobile web hybrid apps in company.}\\\multicolumn{2}{c}{} \\
 
 \end{tabular}
 
 \section{Projects}
 
-\subsection*{MobifoneCEO}
 
-End user mobile app for Mobifone's organization client. Key highlight is a in-house chart drawing using both SVG and Canvas2D, specific back-end rendering is selected at runtime depens on the running platform (iOS/Android).
+\subsection*{MobifoneCEO\\\small 2012}
+
+End-user mobile app for Mobifone's organization type client. Feature highlight is a in-house implementation of chart drawing using two rendering backend: SVG and Canvas2D - which is selected at runtime based on some platform criteria (OS, OS type,\ldots).
 
 \begin{tabular}{rl}
+    \textsc{Client:} & \href{http://www.mobifone.com.vn/}{Mobifone}\\
     \textsc{Scale:} & 3 persons in 1 month\\
+    \textsc{Role:} & Sole Developer\\
     \textsc{Techs:} & CoffeeScript, LESS, PhoneGap, jQuery Mobile, Jade, Paper.js\\
 \end{tabular}
 
-\subsection*{Banc-It Series\hfill \hyperlink{bancit-links}{ | \footnotesize Links}}
-
-An series of mobile application, implemented as a single page web app, with internal achievements mechanism
+\subsection*{Banc-It Series \hfill \footnotesize {\hyperlink{bancit-links}{| Links}}\\\small 2013}
+An series of e-learning mobile application, the biggest technical obstacle is ungeneralizable criteria of achievements. Which was resolved by a specialized event driven implemetation.
 
 \begin{tabular}{rl}
+    \textsc{Client:} & \href{http://bankerslab.com/}{BankersLab}\\
     \textsc{Scale:} & 4 persons in 2 months\\
-    \textsc{Techs:} & CoffeeScript, Sench Touch, SASS, OAuth\\
-    
+    \textsc{Role:} & Sole Developer\\
+    \textsc{Techs:} & CoffeeScript, Sench Touch, SASS, OAuth
 \end{tabular}
 
-\subsection*{FICO Missão: Positivo \hfill \hyperlink{fico-links} { | \footnotesize Links}}
-
-A mobile game, written in Lua using CoronaSDK. I wrote it's GUI from the ground up which feature cover flow, accorion,\ldots
+\subsection*{FICO Missão: Positivo \hfill \footnotesize {\hyperlink{bancit-links}{| Links}}\\\small 2013}
+A mixed of mobile game \& business application written in Lua using CoronaSDK. Most of advanced GUI elements were written the ground up on top primitive graphics elements: cover flow, accordion, buffered list,\ldots
 
 \begin{tabular}{rl}
+    \textsc{Client:} & \href{http://bankerslab.com/}{BankersLab}\\
     \textsc{Scale:} & 5 persons in 2 months\\
-    \textsc{Techs:} & <todo>\\
+    \textsc{Role:} & GUI Developer\\
+    \textsc{Techs:} & Lua, CoronaSDK, OAuth
 \end{tabular}
 
-\subsection*{Dove Yeu Toc \hfill \hyperlink{dove-links} { | \footnotesize Links}}
-
-A sort of complex mobile app with social network feature <TODO: simplify> following, comments, like, find friends by contacts, take photos\\
-sliding menu UI...
+\subsection*{Dove Yeu Toc \hfill \footnotesize {\hyperlink{dove-links}{| Links}}\\\small 2013}
+A featureful mobile application, features: basic social network interactions (following, commenting, like); not so basic (find friends by contacts, take / upload photos); calendar event appoinment; a simple achievements / (real) rewards mechanism
 
 \begin{tabular}{rl}
+    \textsc{Client:} & \href{http://www.unilever.com/}{Unilever}, \href{http://www.ogilvy.com/}{Ogilvy}\\
     \textsc{Scale:} & 7 persons in 2 months\\
+    \textsc{Role}: & Lead Mobile Engineer\\
     \textsc{Techs:} & CoffeeScript, Sencha Touch\\
 \end{tabular}
 
-\subsection*{Commstree 4 \\- SeaGames 2015 Broadcasting \& Volunteer Management \hfill \hyperlink{ct-links} { | \footnotesize Links}}
-
-Developed a distributed, clustering processing system to be utilized on SeaGame 2015. Responsible for broadcasting messages via selected channels (emails, SMS\ldots) and as a daemon continuously keeping data integrity and up-to-date in an efficient manner.g a broadcast
+\subsection*{Commstree 4 \hfill \footnotesize {\hyperlink{ct-links}{| Links}}\\\large - SeaGames 2015 Broadcasting \& Volunteer Management\\\small 2014}
+End-to-end enterprise solutions primarily to serve on the SeaGames 2015. I'm responsible for developing a distributed / clustered background system which in charge of broadcasting messages via selected channels (emails, SMS\ldots) and as a daemon that continuously keeping data integrity and up-to-date in an efficient manner.
 
 \begin{tabular}{rl}
-    \textsc{Scale:} & ~20 persons in 2 years\\
-    \textsc{Techs:} & Vert.X, Spring (-MVC/-Data,\ldots), Hibernate, Python, Groovy
+    \textsc{Client:} & \href{http://www.sportsingapore.gov.sg/}{Sport Singapore}\\
+    \textsc{Scale:} & \~20 persons in 2 years\\
+    \textsc{Role:} & Background Engineer / Team Leader\\ 
+    \textsc{Techs:} & Vert.x, RxJava, Python, Groovy, Spring (-MVC/-Data,\ldots), Hibernate,\ldots\\
 \end{tabular}
+    
 
 
 %Section: Education
+\hfill
 \section{Education}
 \begin{tabular}{rl}	
-    \textsc{July} 2008 & Participated in \textsc{Computer Science} at \textit{HCM International University} (National Univerisy)
+    \textsc{July} 2008 & Participated in \textsc{Computer Science} at \textit{HCM International University (National Univerisy)}
 \end{tabular}
+
 
 %Section: Languages
 \section{Languages}
@@ -170,7 +178,7 @@ Developed a distributed, clustering processing system to be utilized on SeaGame 
 \end{tabular}
 
 \section{Interests and Activities}
-Hacking, literate coding, bizarre programming, critical thinking\ldots\\
+Hacking, literate coding, functional programming, critical thinking\ldots\\
 Speaker at \href{http://www.barcampsaigon.org/2012/09/thank-you-barcampers-sponsors-volunteers/}{Barcamp 2012} ``30 Minutes Game Development with Unity'' and Techcamp 2014 \href{http://www.slideshare.net/huylenq/interactive-development-with-vim-techcamp}{``Interactive Development with Vim''}.\\
 A (tiny) Clojure user group organizer.\\
 
@@ -221,7 +229,7 @@ A (tiny) Clojure user group organizer.\\
 \hrulefill\\
 \newline
 \begin{tabular}{rl}
-    \textit{Landing Page} & \url{https://www.volunteers.sg}\\
+    \textit{Landing Page} & \url{https://www.volunteers.sg/}\\
 \end{tabular}
 
 
